@@ -1,0 +1,76 @@
+.mem-block {
+  font-size: 5vh
+}
+
+.mem-container {
+  width: 50vh;
+}
+
+
+
+img {
+  width: 0vh;
+}
+
+.body-mem {
+  overflow: hidden;
+  height: 0;
+  transition: 0.3s;
+}
+
+.mem-input:checked ~ .body-mem {
+  transition: 0.3s;
+  height: 15vh;
+  transform: scale(1.10);
+}
+
+.mem-input:hover ~ .body-mem {
+  transition: 0.3s;
+  height: 15vh;
+  transform: scale(1.10);
+}
+
+.mem-input:hover ~ .body-mem img {
+  transition: 0.3s;
+  width: 15vh;
+  transform: scale(1.10);
+}
+
+.mem-input:checked ~ .body-mem img{
+  transition: 0.3s;
+  width: 15vh;
+  transform: scale(1.10);
+}
+
+.mem-input {
+  width: 0px;
+}
+
+.mem-input:hover + .arr {
+  transition: 0.3s;
+  transform: rotate(180deg);
+}
+
+.arr:hover{
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+
+.mem-input:checked + .arr  {
+  transition: 0.3s;
+  transform: rotate(180deg);
+}
+
+
+
+.arr {
+display: inline-block;
+background-size: 100% 100%;
+background-image: url("/img/arrow.svg");
+background-repeat: no-repeat;
+width: 10px;
+height: 10px;
+transition: 0.3s;
+}
+
+
