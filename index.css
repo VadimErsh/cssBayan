@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@400;700&display=swap');
+
 .mem-block {
   font-size: 5vh
 }
@@ -20,25 +22,47 @@ img {
 
 .mem-input:checked ~ .body-mem {
   transition: 0.3s;
-  height: 15vh;
+  height: 45vh;
   transform: scale(1.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3vh;
+}
+
+.mem-input:checked ~ .wrapper-text .color-text {
+  color: black;
+}
+
+.wrapper-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
 }
 
 .mem-input:hover ~ .body-mem {
   transition: 0.3s;
-  height: 15vh;
+  height: 33vw;
   transform: scale(1.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
 }
 
 .mem-input:hover ~ .body-mem img {
   transition: 0.3s;
-  width: 15vh;
+  width: 40vw;
   transform: scale(1.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mem-input:checked ~ .body-mem img{
   transition: 0.3s;
-  width: 15vh;
+  width: 40vw;
   transform: scale(1.10);
 }
 
@@ -46,7 +70,7 @@ img {
   width: 0px;
 }
 
-.mem-input:hover + .arr {
+.mem-input:hover + .wrapper-text .arr {
   transition: 0.3s;
   transform: rotate(180deg);
 }
@@ -56,7 +80,7 @@ img {
   transition: 0.3s;
 }
 
-.mem-input:checked + .arr  {
+.mem-input:checked + .wrapper-text .arr  {
   transition: 0.3s;
   transform: rotate(180deg);
 }
@@ -68,9 +92,75 @@ display: inline-block;
 background-size: 100% 100%;
 background-image: url("/img/arrow.svg");
 background-repeat: no-repeat;
-width: 10px;
-height: 10px;
+width: 15px;
+height: 15px;
 transition: 0.3s;
+opacity: 0;
+}
+
+.mem-container {
+  width: 60vw;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffb849;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Fredoka One', sans-serif;
+  box-shadow: 4px 4px 100px 0px rgba(0, 0, 0, 0.27);
+  transition: 0.3s;
+}
+
+body {
+  background-color: #ffa100 ;
+}
+
+.line {
+  margin-top: 1vh;
+  height: 0.2vh;
+  width: 100%;
+  background-color: black;
+}
+
+.mem-title {
+  width: 100%;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}
+
+.mem-block:hover  .arr  {
+  opacity: 1;
+  transition: 0.3s;
+
+}
+
+.mem-block:hover .mem-title {
+  color:rgb(0, 0, 0);
+  transition: 0.3s;
+}
+
+.mem-block {
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0px;
+}
+
+.header {
+  font-size: 2.8vw;
+  color: black;
 }
 
 
+ .mem-input:checked {
+  color: rgb(0, 0, 0);
+}
+
+label:checked {
+  color: black;
+}
+
+.color-text {
+  font-size: 2.5vw;
+}
