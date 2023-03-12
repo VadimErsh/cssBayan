@@ -8,8 +8,6 @@
   width: 50vh;
 }
 
-
-
 img {
   width: 0vh;
 }
@@ -87,17 +85,15 @@ img {
   transform: rotate(180deg);
 }
 
-
-
 .arr {
-display: inline-block;
-background-size: 100% 100%;
-background-image: url("/img/arrow.svg");
-background-repeat: no-repeat;
-width: 2vw;
-height: 2vh;
-transition: 0.3s;
-opacity: 0;
+  display: inline-block;
+  background-size: 100% 100%;
+  background-image: url("/img/arrow.svg");
+  background-repeat: no-repeat;
+  width: 2vw;
+  height: 2vh;
+  transition: 0.3s;
+  opacity: 0;
 }
 
 .mem-container {
