@@ -100,7 +100,7 @@ img {
   width: 60vw;
   margin: 0 auto;
   padding: 20px;
-  background-color: #ffb849;
+  background-color: #cdd690;
   border-radius: 10px;
   cursor: pointer;
   font-family: 'Fredoka One', sans-serif;
@@ -109,7 +109,7 @@ img {
 }
 
 body {
-  background-color: #ffa100 ;
+  background-color: #d4c16b ;
 }
 
 .line {
@@ -124,7 +124,7 @@ body {
   display: inline-block;
   cursor: pointer;
   transition: 0.3s;
-  color: white;
+  color: #79787e;
 }
 
 .mem-block:hover .arr  {
