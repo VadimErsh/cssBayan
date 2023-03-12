@@ -22,17 +22,19 @@ img {
 
 .mem-input:checked ~ .body-mem {
   transition: 0.3s;
-  height: 45vh;
+  height: 30vw;
   transform: scale(1.10);
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 3vh;
+  margin-top: 4vh;
 }
 
 .mem-input:checked ~ .wrapper-text .color-text {
   color: black;
 }
+
+
 
 .wrapper-text {
   display: flex;
@@ -43,12 +45,12 @@ img {
 
 .mem-input:hover ~ .body-mem {
   transition: 0.3s;
-  height: 33vw;
+  height: 30vw;
   transform: scale(1.10);
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5vh;
+  margin-top: 4vh;
 }
 
 .mem-input:hover ~ .body-mem img {
@@ -92,8 +94,8 @@ display: inline-block;
 background-size: 100% 100%;
 background-image: url("/img/arrow.svg");
 background-repeat: no-repeat;
-width: 15px;
-height: 15px;
+width: 2vw;
+height: 2vh;
 transition: 0.3s;
 opacity: 0;
 }
@@ -129,10 +131,9 @@ body {
   color: white;
 }
 
-.mem-block:hover  .arr  {
+.mem-block:hover .arr  {
   opacity: 1;
   transition: 0.3s;
-
 }
 
 .mem-block:hover .mem-title {
@@ -162,5 +163,58 @@ label:checked {
 }
 
 .color-text {
-  font-size: 2.5vw;
+  font-size: 2.2vw;
+}
+
+body {
+  margin: 0;
+}
+
+@media screen and (max-width:1440px) {
+  .color-text {
+    font-size: 2vw;
+  }
+
+  .header {
+    font-size: 2.5vw;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+
+  .mem-title {
+    color: black;
+  }
+
+  .arr {
+    opacity: 1;
+  }
+
+  .mem-container,
+  .mem-title {
+    cursor:auto;
+  }
+
+  .color-text {
+    font-size: 1.5vw;
+  }
+
+  .header {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width:380px) {
+  .color-text {
+    font-size: 2vw;
+  }
+
+  .header {
+    font-size: 2.5vw;
+  }
+
+  .wrapper-text {
+    border-bottom: 1px solid black;
+  }
 }
