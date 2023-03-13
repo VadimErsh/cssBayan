@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@400;700&display=swap');
+
+.mem-block {
+  font-size: 5vh
+}
+
+.mem-container {
+  width: 50vh;
+}
+
+img {
+  width: 0vh;
+}
+
+.mem-title:active {
+  opacity: 0.5;
+}
+
+.body-mem {
+  overflow: hidden;
+  height: 0;
+  transition: 0.3s;
+}
+
+.mem-input:checked ~ .body-mem {
+  transition: 0.3s;
+  height: 30vw;
+  transform: scale(1.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4vh;
+}
+
+.mem-input:checked ~ .wrapper-text .color-text {
+  color: black;
+}
+
+
+
+.wrapper-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.2vw solid black;
+}
+
+.mem-input:hover ~ .body-mem {
+  transition: 0.3s;
+  height: 30vw;
+  transform: scale(1.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4vh;
+}
+
+.mem-input:hover ~ .body-mem img {
+  transition: 0.3s;
+  width: 40vw;
+  transform: scale(1.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mem-input:checked ~ .body-mem img{
+  transition: 0.3s;
+  width: 40vw;
+  transform: scale(1.10);
+}
+
+.mem-input {
+  width: 0;
+}
+
+.mem-input:hover + .wrapper-text .arr {
+  transition: 0.3s;
+  transform: rotate(180deg);
+}
+
+.arr:hover{
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+
+.mem-input:checked + .wrapper-text .arr  {
+  transition: 0.3s;
+  transform: rotate(180deg);
+}
+
+.arr {
+  display: inline-block;
+  background-size: 100% 100%;
+  background-image: url("./img/arrow.svg");
+  background-repeat: no-repeat;
+  width: 2vw;
+  height: 2vh;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.mem-container {
+  width: 60vw;
+  margin: 0 auto;
+  padding: 3rem;
+  background-color: #cdd690;
+  border-radius: 3rem;
+  cursor: pointer;
+  font-family: 'Fredoka One', sans-serif;
+  box-shadow: 3rem 3rem 50rem 0rem rgba(0, 0, 0, 0.27);
+  transition: 0.3s;
+}
+
+body {
+  background-color: #d4c16b ;
+}
+
+.line {
+  margin-top: 1vh;
+  height: 0.2vh;
+  width: 100%;
+  background-color: black;
+}
+
+.mem-title {
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #79787e;
+}
+
+.mem-block:hover .arr  {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.mem-block:hover .mem-title {
+  color:rgb(0, 0, 0);
+  transition: 0.3s;
+}
+
+.mem-block {
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem 0rem;
+}
+
+.header {
+  font-size: 2.8vw;
+  color: black;
+}
+
+
+ .mem-input:checked {
+  color: rgb(0, 0, 0);
+}
+
+label:checked {
+  color: black;
+}
+
+.color-text {
+  font-size: 2.2vw;
+}
+
+body {
+  margin: 0;
+}
+
+@media screen and (max-width:1440px) {
+  .color-text {
+    font-size: 2vw;
+  }
+
+  .header {
+    font-size: 2.5vw;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  .mem-block:hover .mem-title {
+    color:#79787e;
+    transition: 0.3s;
+  }
+
+  .mem-input:hover + .wrapper-text .arr {
+    transition: 0.3s;
+    transform: rotate(0deg);
+  }
+
+  .mem-input:checked + .wrapper-text .arr {
+    transition: 0.3s;
+    transform: rotate(180deg);
+  }
+
+  .mem-input:hover ~ .body-mem {
+   display: none;
+  }
+
+  .mem-input:checked ~ .body-mem {
+    display: flex;
+   }
+
+  .mem-input:hover ~ .body-mem img {
+  transition: 0.3s;
+  width: 40vw;
+  transform: scale(1.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  .arr {
+    opacity: 1;
+  }
+
+  .mem-container,
+  .mem-title {
+    cursor:auto;
+  }
+
+  .color-text {
+    font-size: 1.5vw;
+  }
+
+  .header {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width:380px) {
+  .color-text {
+    font-size: 2vw;
+  }
+
+  .header {
+    font-size: 2.5vw;
+  }
+
+  .wrapper-text {
+    border-bottom: 0.1rem solid black;
+  }
+}
