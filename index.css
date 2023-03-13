@@ -12,6 +12,10 @@ img {
   width: 0vh;
 }
 
+.mem-title:active {
+  opacity: 0.5;
+}
+
 .body-mem {
   overflow: hidden;
   height: 0;
@@ -38,7 +42,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid black;
+  border-bottom: 0.2vw solid black;
 }
 
 .mem-input:hover ~ .body-mem {
@@ -67,7 +71,7 @@ img {
 }
 
 .mem-input {
-  width: 0px;
+  width: 0;
 }
 
 .mem-input:hover + .wrapper-text .arr {
@@ -99,12 +103,12 @@ img {
 .mem-container {
   width: 60vw;
   margin: 0 auto;
-  padding: 20px;
+  padding: 3rem;
   background-color: #cdd690;
-  border-radius: 10px;
+  border-radius: 3rem;
   cursor: pointer;
   font-family: 'Fredoka One', sans-serif;
-  box-shadow: 4px 4px 100px 0px rgba(0, 0, 0, 0.27);
+  box-shadow: 3rem 3rem 50rem 0rem rgba(0, 0, 0, 0.27);
   transition: 0.3s;
 }
 
@@ -141,7 +145,7 @@ body {
   transition: 0.3s;
   display: flex;
   flex-direction: column;
-  gap: 10px 0px;
+  gap: 2rem 0rem;
 }
 
 .header {
@@ -179,10 +183,6 @@ body {
 
 @media screen and (max-width:768px) {
 
-  .mem-title {
-    color: black;
-  }
-
   .arr {
     opacity: 1;
   }
@@ -211,6 +211,6 @@ body {
   }
 
   .wrapper-text {
-    border-bottom: 1px solid black;
+    border-bottom: 0.1rem solid black;
   }
 }
