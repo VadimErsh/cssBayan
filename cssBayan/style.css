@@ -92,7 +92,7 @@ img {
 .arr {
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url("/img/arrow.svg");
+  background-image: url("./img/arrow.svg");
   background-repeat: no-repeat;
   width: 2vw;
   height: 2vh;
