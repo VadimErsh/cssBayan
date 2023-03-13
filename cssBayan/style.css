@@ -125,7 +125,6 @@ body {
 
 .mem-title {
   width: 100%;
-  display: inline-block;
   cursor: pointer;
   transition: 0.3s;
   color: #79787e;
@@ -182,6 +181,37 @@ body {
 
 
 @media screen and (max-width:768px) {
+  .mem-block:hover .mem-title {
+    color:#79787e;
+    transition: 0.3s;
+  }
+
+  .mem-input:hover + .wrapper-text .arr {
+    transition: 0.3s;
+    transform: rotate(0deg);
+  }
+
+  .mem-input:checked + .wrapper-text .arr {
+    transition: 0.3s;
+    transform: rotate(180deg);
+  }
+
+  .mem-input:hover ~ .body-mem {
+   display: none;
+  }
+
+  .mem-input:checked ~ .body-mem {
+    display: flex;
+   }
+
+  .mem-input:hover ~ .body-mem img {
+  transition: 0.3s;
+  width: 40vw;
+  transform: scale(1.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
   .arr {
     opacity: 1;
